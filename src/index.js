@@ -19,6 +19,7 @@ client.on('ready', (c) => {
 
 const commandHandlers = {
     ping: (message) => message.reply("pong"),
+    test: (message) => message.channel.send("yes"),
     sigma: (message) => {
         if (gifs.notSigma) {
             message.channel.send(gifs.notSigma);
